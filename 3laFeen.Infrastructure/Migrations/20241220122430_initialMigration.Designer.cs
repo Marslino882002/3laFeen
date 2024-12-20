@@ -12,8 +12,8 @@ using _3laFeen.Infrastructure.Data;
 namespace _3laFeen.Infrastructure.Migrations
 {
     [DbContext(typeof(_3laFeenDbContext))]
-    [Migration("20241220014727_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20241220122430_initialMigration")]
+    partial class initialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

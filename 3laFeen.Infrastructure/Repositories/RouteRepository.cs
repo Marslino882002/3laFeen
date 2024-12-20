@@ -68,7 +68,7 @@ namespace _3laFeen.Infrastructure.Repositories
             var route = await _context.Set<Route>()
                 .FirstOrDefaultAsync(r => r.To == To && r.From == From);
 
-            return route?.Transportation; // Return the transportation or null if not found
+            return route?.Transportation != null ? string.Join(", ", route.Transportation) : null;
 
 
 
